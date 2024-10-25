@@ -1,8 +1,8 @@
 {
-	"name": "DelimitedText_source",
+	"name": "DelimitedText2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStoragesoucer",
+			"referenceName": "AzureDataLakeStorageSInk",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -35,11 +35,12 @@
 				}
 			},
 			"columnDelimiter": ",",
+			"compressionCodec": "ZipDeflate",
+			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
-			"firstRowAsHeader": false,
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
